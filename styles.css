@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent; /* Fundo transparente para a janela flutuante */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para a janela flutuante */
+  .floating-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com transparência */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para destacar a janela */
+    z-index: 1000; /* Garante que a janela esteja sobreposta a outras */
+    display: none; /* Inicialmente oculta */
+  }
+  
+  /* Estilo para o conteúdo dentro da janela flutuante */
+  .floating-content {
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo para o botão fechar da janela flutuante */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão de abertura da janela flutuante */
+  .open-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 999; /* Colocado abaixo da janela flutuante */
+  }
+  
+  .open-btn:hover {
+    background-color: #0056b3;
+  }
+  
